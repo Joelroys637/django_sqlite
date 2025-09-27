@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Students</title>
+</head>
+<body>
+    <h2>Registered Students</h2>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - {{ student.age }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Register Another</a>
+</body>
+</html>
